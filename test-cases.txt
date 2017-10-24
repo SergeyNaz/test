@@ -1,0 +1,20 @@
+Feature: Query of available countries
+1) Request of available countries returned correct response (200 OK, fields) (accomplished)
+2) There are no countries with the same name
+3) Result contains unique ids
+4) Each country id corresponds to the end of url
+5) Each country starts with a capital letter
+6) Redirect to https when request is accomplished with http
+7) All country names indicated with russian language
+
+Feature: Query for a searching of companies
+1) Search by Russia region and company name returned one item (accomplished)
+2) Returned one item when using only_with_vacancies=true (accomplished)
+3) Returned one item when using only_with_vacancies=false
+4) Returned zero items when using parameter page=1
+5) Returned zero items when using parameter per_page=0
+
+Feature: Query for a searching of vacancies
+1) Check QA Automation Engineer vacancy from company in SPb (accomplished)
+2) When also using text parameter (accomplished)
+3) Check all available parameters for query.
